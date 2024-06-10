@@ -4,9 +4,9 @@ from firebase_admin import credentials
 from firebase_admin import db
 import json
 
-cred = credentials.Certificate('gookey.json')
+cred = credentials.Certificate('your database.json')
 firebase_admin.initialize_app(cred, {
-	'databaseURL': 'https://safetytector-default-rtdb.firebaseio.com'
+	'databaseURL': 'your database URL'
 })
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
